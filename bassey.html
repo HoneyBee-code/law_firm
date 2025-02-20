@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bassey Law Firm</title>
+    <link rel="stylesheet" href="styles/bassey.css">
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- AOS Library JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div id="logo-banner">
+            <div id="logo">
+                <img src="images/logo.jpg" alt="Bassey Law Firm Logo">
+            </div>
+            <div id="banner">
+                <h1>Bassey Law Firm</h1>
+                <p>Let us help you win your case</p>
+            </div>
+        </div>
+    
+        <nav>
+            <ul class="menu">
+                <li class="hideOnMobile"><a href="#header">Home</a></li>
+                <li class="hideOnMobile"><a href="#practice">Services</a></li>
+                <li class="hideOnMobile"><a href="#testimonial">Testimonial</a></li>
+                <li class="hideOnMobile"><a href="#team">Our Team</a></li>
+                <li class="hideOnMobile"><a href="#blog">Blog</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="showOnMobile" onclick="toggleSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#fff">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        
+            <ul class="sidebar">
+                <li onclick="toggleSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000">
+                            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#practice">Services</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="hero">
+        <div id="hero-content">
+            <h3 class="fade-in">You are Welcome</h3>
+            <h1 class="slide-in">Overview</h1>
+            <p class="fade-in-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+            <div id="hero-btns">
+                <a href="#" class="hero-btn">Book a Call</a>
+                <a href="#" class="hero-btn">Book a Consult</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="services-container">
+            <h2 class="section-title">Our Practices</h2>
+            <div class="services-grid">
+                <!-- Service Card 1 -->
+                <div class="service-card">
+                    <img src="images/civ112.jpg" alt="Criminal Law" class="service-image" />
+                    <h3 class="service-title">Criminal Law</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <a href="#" class="service-link">Learn More</a>
+                </div>
+    
+                <!-- Service Card 2 -->
+                <div class="service-card">
+                    <img src="images/fam111.jpg" alt="Family Law" class="service-image" />
+                    <h3 class="service-title">Family Law</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <a href="#" class="service-link">Learn More</a>
+                </div>
+    
+                <!-- Service Card 3 -->
+                <div class="service-card">
+                    <img src="images/bus111.jpg" alt="Business Law" class="service-image" />
+                    <h3 class="service-title">Business Law</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <a href="#" class="service-link">Learn More</a>
+                </div>
+    
+                <!-- Service Card 4 -->
+                <div class="service-card">
+                    <img src="images/civ111.jpg" alt="Civil & Political Rights" class="service-image" />
+                    <h3 class="service-title">Civil & Political Rights</h3>
+                    <p class="service-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                    </p>
+                    <a href="#" class="service-link">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <section id="testimonial">
+        <div id="hear-card">
+            <h2>Hear from our Clients</h2>
+            <img src="images/secretary.jpg" alt="secretary-pic" />
+        </div>
+    
+        <div class="testimonial-carousel">
+            <!-- Left Arrow -->
+            <div class="carousel-arrow left-arrow" onclick="slideCarousel('left')">
+                &#10094;
+            </div>
+    
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony1.jpg" alt="testimony1" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mr. Uchenna Chijioke</h4>
+                </div>
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony2.jpg" alt="testimony2" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mrs. Olakunle Badmus</h4>
+                </div>
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony1.jpg" alt="testimony1" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mr. Uchenna Chijioke</h4>
+                </div>
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony2.jpg" alt="testimony2" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mrs. Olakunle Badmus</h4>
+                </div>
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony1.jpg" alt="testimony1" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mr. Uchenna Chijioke</h4>
+                </div>
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony2.jpg" alt="testimony2" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mrs. Olakunle Badmus</h4>
+                </div>
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony1.jpg" alt="testimony1" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mr. Uchenna Chijioke</h4>
+                </div>
+                <div class="testimonial-card">
+                    <h2>Client Testimonial</h2>
+                    <img src="images/testimony2.jpg" alt="testimony2" />
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+                       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <h4>Mrs. Olakunle Badmus</h4>
+                </div>
+            </div>
+    
+            <!-- Right Arrow -->
+            <div class="carousel-arrow right-arrow" onclick="slideCarousel('right')">
+                &#10095;
+            </div>
+        </div>
+    </section>
+
+
+
+
+<section id="team">
+    <h2>Our Team</h2>
+
+    <div class="image" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/team1.jpg" alt="team1" />
+        <div class="overlay">
+            <h4>Barr. Jude Bassey</h4>
+            <p>Senior Partner</p>
+        </div>
+    </div>
+
+    <div class="image" data-aos="zoom-in" data-aos-delay="400">
+        <img src="images/team2.jpg" alt="team2" />
+        <div class="overlay">
+            <h4>Mayowa Thompson</h4>
+            <p>Associate Lawyer</p>
+        </div>
+    </div>
+
+    <div class="image" data-aos="zoom-in" data-aos-delay="600">
+        <img src="images/team3.jpg" alt="team3" />
+        <div class="overlay">
+            <h4>Nneka Chioma</h4>
+            <p>Legal Consultant</p>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="blog-section">
+    <h2>Recent Blog</h2>
+    <div class="blog-container">
+        <details data-aos="fade-up">
+            <summary>
+                <img src="images/party.png" alt="Blog 1 Thumbnail">
+                <h3>Understanding the Basics of Family Law</h3>
+            </summary>
+            <p>
+                Family law encompasses a variety of legal issues including marriage, divorce, child custody, and more. This post dives into the essentials every family should be aware of.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </details>
+
+        <details data-aos="fade-up" data-aos-delay="200">
+            <summary>
+                <img src="images/saraki.jpg" alt="Blog 2 Thumbnail">
+                <h3>Corporate Law: Safeguarding Your Business</h3>
+            </summary>
+            <p>
+                Corporate law ensures that businesses operate within the legal framework. Learn about the key legal aspects that protect your business from potential pitfalls.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </details>
+
+        <details data-aos="fade-up" data-aos-delay="400">
+            <summary>
+                <img src="images/nigr.jpg" alt="Blog 3 Thumbnail">
+                <h3>The Importance of Civil Rights Protection</h3>
+            </summary>
+            <p>
+                Civil rights are fundamental to ensuring equality and justice. Explore how legal protections help maintain these essential rights in society.
+            </p>
+            <a href="#" class="read-more">Read More</a>
+        </details>
+    </div>
+</section>
+
+
+<section id="contact">
+    <h3>Contact Us</h3>
+    <div class="contact-info">
+        <div class="contact-item" data-aos="fade-up">
+            <h4>Head Office</h4>
+            <p>51, Aguda Ogba, <br> Ikeja, <br> Lagos State.</p>
+        </div>
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+            <h4>Email</h4>
+            <p>basseylaw@gmail.com</p>
+        </div>
+        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+            <h4>Phone</h4>
+            <p>0802 111 2222 <br> 0803 111 3333</p>
+        </div>
+        <div class="contact-item social-media" data-aos="fade-up" data-aos-delay="600">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="https://twitter.com" target="blank"><ion-icon name="logo-twitter"></ion-icon></i></a>
+                <a href="https://linkedin.com" target="blank"><ion-icon name="logo-linkedin"></ion-icon></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Bassey Law Firm. All Rights Reserved.</p>
+</footer>
+
+
+    <script src="script/bassey.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
